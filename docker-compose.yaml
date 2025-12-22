@@ -4,7 +4,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-      target: 8no-ai-production
+      target: eightno-production
     ports:
       - "5173:5173"
     env_file: ".env.local"
@@ -36,7 +36,7 @@ services:
   app-dev:
     image: 8no-ai:development
     build:
-      target: 8no-ai-development
+      target: eightno-development
     env_file: ".env.local"
     environment:
       - NODE_ENV=development

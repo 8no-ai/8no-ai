@@ -18,7 +18,7 @@ COPY . .
 EXPOSE 5173
 
 # Production image
-FROM base AS 8no-ai-production
+FROM base AS eightno-production
 
 # Define non-sensitive configuration variables
 ARG OLLAMA_API_BASE_URL
@@ -45,7 +45,7 @@ RUN pnpm run build
 CMD [ "pnpm", "run", "dockerstart"]
 
 # Development image
-FROM base AS 8no-ai-development
+FROM base AS eightno-development
 
 # Define non-sensitive configuration variables
 ARG OLLAMA_API_BASE_URL
