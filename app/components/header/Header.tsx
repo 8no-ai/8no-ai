@@ -35,7 +35,7 @@ export function Header() {
             <img src="/rank-2-light.svg" alt="Fazier badge" className="h-8 block dark:hidden" />
           </a>
           <button
-            onClick={() => window.open('https://github.com/codinit-dev/codinit-dev/issues/new/choose', '_blank')}
+            onClick={() => window.open('https://github.com/8no-ai/8no-ai/issues/new/choose', '_blank')}
             className="flex items-center justify-center font-medium shrink-0 rounded-md focus-visible:outline-2 disabled:op-50 relative disabled:cursor-not-allowed h-9 w-9 bg-transparent hover:bg-white/5 dark:hover:bg-white/10 border border-white/10 dark:border-white/20 transition-colors"
             type="button"
             title="Report a bug"

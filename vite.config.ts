@@ -57,7 +57,7 @@ const getPackageJson = () => {
     };
   } catch {
     return {
-      name: 'codinit.dev',
+      name: '8no-ai',
       description: 'A LLM interface',
       license: 'MIT',
       dependencies: {},

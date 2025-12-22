@@ -79,7 +79,7 @@ export function useGit() {
       const headers: {
         [x: string]: string;
       } = {
-        'User-Agent': 'codinit.dev',
+        'User-Agent': '8no.ai',
       };
 
       const auth = lookupSavedPassword(normalizedUrl);
