@@ -295,8 +295,8 @@ const UpdateTab = () => {
           <DialogDescription>
             <div className="mt-4">
               <p className="text-sm text-codinit-elements-textSecondary mb-4">
-                A new version ({latestVersion}) is available from{' '}
-                <span className="font-mono">8no-ai/8no-ai</span> on GitHub.
+                A new version ({latestVersion}) is available from <span className="font-mono">8no-ai/8no-ai</span> on
+                GitHub.
               </p>
 
               {releaseUrl && (

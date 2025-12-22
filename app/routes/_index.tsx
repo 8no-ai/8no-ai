@@ -9,10 +9,7 @@ import { LiveActionAlert } from '~/components/chat/LiveActionAlert';
 import { DiffApprovalDialog } from '~/components/workbench/DiffApprovalDialog';
 
 export const meta: MetaFunction = () => {
-  return [
-    { title: '8no.Ai' },
-    { name: 'description', content: 'Talk with 8no.Ai, an AI assistant from 8no.Ai' },
-  ];
+  return [{ title: '8no.Ai' }, { name: 'description', content: 'Talk with 8no.Ai, an AI assistant from 8no.Ai' }];
 };
 
 export const loader = () => json({});

@@ -146,10 +146,7 @@ export function HeaderActionButtons({}: HeaderActionButtonsProps) {
           {cloudflareConn.user && <CloudflareDeploymentLink />}
         </IconButton>
         <div className="w-[1px] bg-codinit-elements-borderColor" />
-        <IconButton
-          title="View on GitHub"
-          onClick={() => window.open('https://github.com/8no-ai/8no-ai', '_blank')}
-        >
+        <IconButton title="View on GitHub" onClick={() => window.open('https://github.com/8no-ai/8no-ai', '_blank')}>
           <img
             className="w-5 h-5"
             height="20"

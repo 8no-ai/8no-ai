@@ -66,6 +66,7 @@ export default async function handleRequest(
               }
               isClosed = true;
             }
+
             readable.cancel().catch(() => {
               // Ignore cancel errors
             });
