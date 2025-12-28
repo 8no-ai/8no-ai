@@ -42,7 +42,16 @@
     "electron:build:linux": "rimraf dist && pnpm electron:build:renderer && pnpm electron:build:deps && electron-builder --linux",
     "electron:build:dist": "rimraf dist && pnpm electron:build:renderer && pnpm electron:build:deps && electron-builder -m -w -l",
     "email:dev": "email dev --dir emails --port 3000",
-    "email:export": "email export --dir emails --outDir .react-email"
+    "email:export": "email export --dir emails --outDir .react-email",
+    "postgres:check": "node scripts/check-docker.js",
+    "postgres:up": "node scripts/check-docker.js && docker compose up -d postgres",
+    "postgres:down": "docker compose down postgres",
+    "postgres:stop": "docker compose stop postgres",
+    "postgres:restart": "docker compose restart postgres",
+    "postgres:logs": "docker compose logs -f postgres",
+    "postgres:status": "docker compose ps postgres",
+    "postgres:shell": "docker compose exec postgres psql -U postgres -d 8noai_db",
+    "postgres:test": "node scripts/test-postgres.js"
   },
   "engines": {
     "node": ">=20.15.1"
